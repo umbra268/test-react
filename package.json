@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "pre:build": "rm -rf dist && mkdir dist",
+    "build": "node processMarkdown.js > dist/posts.json && cp -r index.html app/ dist"
+  },
   "devDependencies": {
     "front-matter": "^2.1.2",
     "highlight.js": "^9.9.0",
