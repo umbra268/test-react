@@ -1,7 +1,8 @@
 {
   "scripts": {
     "pre:build": "rm -rf dist && mkdir dist",
-    "build": "node processMarkdown.js > dist/posts.json && cp -r index.html app/ dist"
+    "build": "node processMarkdown.js > dist/pages.json && cp -r index.html app/ dist",
+    "processMarkdown": "node processMarkdown.js > pages.json"
   },
   "devDependencies": {
     "front-matter": "^2.1.2",
